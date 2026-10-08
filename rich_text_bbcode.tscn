@@ -1,16 +1,16 @@
-[gd_scene load_steps=67 format=3 uid="uid://oeg5vj7lpjw0"]
+[gd_scene format=3 uid="uid://oeg5vj7lpjw0"]
 
 [ext_resource type="Script" uid="uid://y5cc2nd5142s" path="res://rich_text_bbcode.gd" id="1"]
 [ext_resource type="Script" uid="uid://bb7p60fm74sxd" path="res://7.gd" id="2_y1knx"]
-[ext_resource type="Script" uid="uid://dll10lvlx081n" path="res://4.gd" id="3_53kqs"]
+[ext_resource type="Script" uid="uid://x8w1awxhk3c1" path="res://epic_richtextfx.gd" id="3_53kqs"]
 [ext_resource type="Script" uid="uid://tifgu1ce57ag" path="res://9.gd" id="4_i7a11"]
-[ext_resource type="Script" uid="uid://qw6moxbw8hvf" path="res://5.gd" id="5_g8il4"]
+[ext_resource type="Script" uid="uid://ccpkutccqf1im" path="res://legendary_richtextfx.gd" id="5_g8il4"]
 [ext_resource type="Script" uid="uid://ieb2a3p37mc3" path="res://10.gd" id="6_0tvr0"]
-[ext_resource type="Script" uid="uid://dm1n78vdyt35e" path="res://6.gd" id="7_c3fvd"]
-[ext_resource type="Script" uid="uid://cd7olw7kth16n" path="res://new_script.gd" id="8_n6vk7"]
+[ext_resource type="Script" uid="uid://c3r38e67uc6ky" path="res://mythic_richtextfx.gd" id="7_c3fvd"]
+[ext_resource type="Script" uid="uid://cwcl34j75p11t" path="res://poor_richtextfx.gd" id="8_n6vk7"]
 [ext_resource type="Script" uid="uid://wxj3hwl31lod" path="res://8.gd" id="9_gpb41"]
-[ext_resource type="Script" uid="uid://b2t1sj7imnat7" path="res://3.gd" id="10_5uoyw"]
-[ext_resource type="Script" uid="uid://bpn6e4nskyu64" path="res://new_script2.gd" id="11_22x38"]
+[ext_resource type="Script" uid="uid://bj1l3100e3phl" path="res://rare_richtextfx.gd" id="10_5uoyw"]
+[ext_resource type="Script" uid="uid://dlhqt26shhl7j" path="res://uncommon_richtextfx.gd" id="11_22x38"]
 [ext_resource type="Script" uid="uid://cssm1pfljvcvc" path="res://g.gd" id="12_i7a11"]
 [ext_resource type="Script" uid="uid://cknac84xuc8ju" path="res://m.gd" id="13_g8il4"]
 [ext_resource type="Script" uid="uid://bfh852tadtke3" path="res://c.gd" id="14_g8il4"]
@@ -165,7 +165,7 @@ action = &"toggle_pause"
 [sub_resource type="Shortcut" id="Shortcut_n2ck8"]
 events = [SubResource("InputEventAction_eu7pn")]
 
-[node name="RichTextBBCode" type="Control"]
+[node name="RichTextBBCode" type="Control" unique_id=1170684861]
 layout_mode = 3
 anchors_preset = 8
 anchor_left = 0.5
@@ -182,7 +182,7 @@ size_flags_horizontal = 2
 size_flags_vertical = 2
 script = ExtResource("1")
 
-[node name="RichTextLabel" type="RichTextLabel" parent="."]
+[node name="RichTextLabel" type="RichTextLabel" parent="." unique_id=986247090]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -1009,7 +1009,7 @@ horizontal_alignment = 1
 custom_effects = [SubResource("RichTextEffect_ibsev"), SubResource("RichTextEffect_t1a68"), SubResource("RichTextEffect_d3gj6"), SubResource("RichTextEffect_yvck8"), SubResource("RichTextEffect_yd5nl"), SubResource("RichTextEffect_6gko5"), SubResource("RichTextEffect_1t7ua"), SubResource("RichTextEffect_emyya"), SubResource("RichTextEffect_t3t47"), SubResource("RichTextEffect_jm0ex"), SubResource("RichTextEffect_0tvr0"), SubResource("RichTextEffect_c3fvd"), SubResource("RichTextEffect_n6vk7"), SubResource("RichTextEffect_gpb41"), SubResource("RichTextEffect_5uoyw"), SubResource("RichTextEffect_22x38"), SubResource("RichTextEffect_vestg"), SubResource("RichTextEffect_t7mei"), SubResource("RichTextEffect_kpiy0"), SubResource("RichTextEffect_vhbtg"), SubResource("RichTextEffect_dxmv8"), SubResource("RichTextEffect_0jfyt"), SubResource("RichTextEffect_v2bj6"), SubResource("RichTextEffect_uhxlo"), SubResource("RichTextEffect_qtplu"), SubResource("RichTextEffect_1bxku"), SubResource("RichTextEffect_yya0y"), SubResource("RichTextEffect_1i8do"), SubResource("RichTextEffect_pmy6j"), SubResource("RichTextEffect_gopfo"), SubResource("RichTextEffect_tinhl")]
 selection_enabled = true
 
-[node name="RichTextLabel2" type="RichTextLabel" parent="."]
+[node name="RichTextLabel2" type="RichTextLabel" parent="." unique_id=510109430]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -1079,7 +1079,7 @@ horizontal_alignment = 1
 custom_effects = [SubResource("RichTextEffect_ibsev"), SubResource("RichTextEffect_t1a68"), SubResource("RichTextEffect_d3gj6"), SubResource("RichTextEffect_yvck8"), SubResource("RichTextEffect_yd5nl"), SubResource("RichTextEffect_6gko5"), SubResource("RichTextEffect_1t7ua"), SubResource("RichTextEffect_emyya"), SubResource("RichTextEffect_t3t47"), SubResource("RichTextEffect_jm0ex"), SubResource("RichTextEffect_0tvr0"), SubResource("RichTextEffect_c3fvd"), SubResource("RichTextEffect_n6vk7"), SubResource("RichTextEffect_gpb41"), SubResource("RichTextEffect_5uoyw"), SubResource("RichTextEffect_22x38"), SubResource("RichTextEffect_vestg"), SubResource("RichTextEffect_t7mei"), SubResource("RichTextEffect_kpiy0"), SubResource("RichTextEffect_vhbtg"), SubResource("RichTextEffect_dxmv8"), SubResource("RichTextEffect_0jfyt"), SubResource("RichTextEffect_v2bj6"), SubResource("RichTextEffect_uhxlo"), SubResource("RichTextEffect_qtplu"), SubResource("RichTextEffect_1bxku"), SubResource("RichTextEffect_yya0y"), SubResource("RichTextEffect_1i8do"), SubResource("RichTextEffect_pmy6j"), SubResource("RichTextEffect_gopfo"), SubResource("RichTextEffect_tinhl")]
 selection_enabled = true
 
-[node name="Pause" type="Button" parent="."]
+[node name="Pause" type="Button" parent="." unique_id=842198574]
 process_mode = 3
 layout_mode = 1
 anchors_preset = 2
